@@ -49,12 +49,12 @@ public class Main{
 
 		GLFWVidMode vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
 
-			glfwSetWindowPos(
-				window,
-				(vidmode.width() - pWidth.get(0)) / 2,
-				(vidmode.height() - pHeight.get(0)) / 2
-			);
-		} 
+		glfwSetWindowPos(
+			window,
+			(vidmode.width() - pWidth.get(0)) / 2,
+			(vidmode.height() - pHeight.get(0)) / 2
+		);
+	} 
 
 		glfwMakeContextCurrent(window);
 		glfwSwapInterval(1);
